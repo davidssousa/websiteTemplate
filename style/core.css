@@ -71,7 +71,7 @@ nav h1 {
     height: 100vh;
     width: 100%;
     display: flex;
-    background-color: rgba(210, 105, 30, 0.15);
+    background-color: #fff;
     z-index: 2;
 }
 
