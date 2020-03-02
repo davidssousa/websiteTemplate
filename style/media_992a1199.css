@@ -7,6 +7,11 @@
         font-size: 28px;
     }
 
+    nav h1::after {
+        content: 'TABLET >= 992px AND <= 1199px';
+        font-size: 20px;
+    }
+
     #img1 {
         background-image: url('../images/banner_03.jpg');
         animation-delay: 0s;

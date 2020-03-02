@@ -8,7 +8,8 @@
     }
 
     nav h1::after {
-        content: 'MOBILE - LANDSCAPE >= 577px AND <= 767px'
+        content: 'MOBILE >= 577px AND <= 767px';
+        font-size: 20px;
     }
 
     #img1 {
