@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav h1 {
+    z-index: 3;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
+}
+.pages {
+    height: 300vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.pages .slider {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+}
+    .slide {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        position: absolute;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        opacity: 0;
+        transform: scale(1.4) rotate(5deg);
+        animation: animate 21s infinite;
+    }
+
+
+    .slider::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    @keyframes animate {
+        25% { opacity: 1; transform: scale(1) rotate(0); }
+        50% { opacity: 0; }
+    }
+
+.pages .quemSomos {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(210, 105, 30, 0.15);
+    z-index: 2;
+}
+
+.pages .services {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(127, 255, 212, 0.144);
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
